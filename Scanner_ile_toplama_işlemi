@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class tutorial {
+
+	public static void main(String[] args) {
+  
+  	   double s1,s2,result;
+       
+		Scanner girdi = new Scanner(System.in);	
+    
+	  System.out.println("1.Sayıyı Girin");
+	      s1 = girdi.nextDouble();
+	  System.out.println("1.Sayıyı Girin");
+	      s2 = girdi.nextDouble();
+	        
+	   result = s1 + s2;      
+	   System.out.println("Girilen sayıların toplamı "+ result);
+
+	}
