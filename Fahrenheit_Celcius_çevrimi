@@ -1,0 +1,20 @@
+
+package uygulamalar;
+import java.util.Scanner;
+public class tutorial {
+
+	public static void main(String[] args) {
+		Scanner girdi = new Scanner(System.in);	
+		
+		double Fahrenheit;
+		
+	    System.out.println("Fahrenheit derecesini girin");
+		Fahrenheit = girdi.nextDouble();
+	      
+		double celsius = (5.0 / 9) * (Fahrenheit - 32); // Formül
+	        
+	    System.out.println("Fahrenheit derecesinin, celsius derecesine çeviriminin sonucu "+ celsius);
+
+	}
+
+}
