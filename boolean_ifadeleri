@@ -1,0 +1,21 @@
+
+package uygulamalar;
+import java.util.Scanner;
+
+public class tutorial {
+
+	public static void main(String[] args) {
+ 
+int x = 1;
+
+System.out.println(x > 0);    // TRUE
+System.out.println(x < 0);    // FALSE
+System.out.println(x != 0);   // TRUE
+System.out.println(x >= 0);   // TRUE
+System.out.println(x != 1);   // FALSE
+System.out.println(x == 1);   // TRUE
+System.out.println(x <= 0);   // FALSE
+     
+		 		
+} 	
+}
