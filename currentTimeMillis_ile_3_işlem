@@ -1,0 +1,35 @@
+
+package uygulamalar;
+import java.util.Scanner;
+
+public class tutorial {
+
+	public static void main(String[] args) {
+		int num1 = (int)(System.currentTimeMillis() % 10); // Sistem milisaniyesini 10'a bölüp kalanı istiyoruz. num1 e atıyoruz.
+	 int num2 =	(int)(System.currentTimeMillis() / 5 % 10); // Sistem milisaniyesini 5'e bölüyoruz. Sonra 10'a bölüp kalanı istiyoruz. num2 e atıyoruz 
+	 
+	 Scanner input = new Scanner(System.in);
+
+
+	 
+	 System.out.print(num1 + " + " + num2 +" = "); // örneğin: 4 + 5 =
+	 int toplam = input.nextInt(); // işlemin sonucunu kullanıcıdan istiyoruz.
+     System.out.println(num1 + " + " + num2 + " = " + toplam + " " + ( num1 + num2 == toplam )); // örneğin: 4 + 5 = 9 true
+
+
+     System.out.print(num1 + " - " + num2 +" = ");
+     int fark = input.nextInt();
+     System.out.println(num1 + " - " + num2 + " = " + fark + " " + ( num1 - num2 == fark ));
+     
+
+     System.out.print(num1 + " * " + num2 +" = ");
+     int carp = input.nextInt();
+     System.out.println(num1 + " * " + num2 + " = " + carp + " " + ( num1 * num2 == carp ));
+     
+		 
+
+		
+} 
+
+		
+}
