@@ -1,0 +1,27 @@
+
+package uygulamalar;
+import java.util.Scanner;
+
+public class tutorial {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Bir tam sayı girin");
+		double num1 = input.nextDouble();
+		
+		double indirim = ((num1 / 100) * 3);
+		
+		if(num1 >= 100){
+			System.out.println(num1-indirim);
+
+		}else{
+			System.out.println("100 tl altı alışverişler de İndirim yapılmamaktadır");
+		}
+		
+		
+		
+} 
+		
+	}
