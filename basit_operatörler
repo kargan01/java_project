@@ -1,0 +1,29 @@
+
+package uygulamalar;
+import java.util.Scanner;
+
+public class tutorial {
+
+	public static void main(String[] args) {
+		
+      int sonuc = 1 + 2;  // sonuc = 3
+     System.out.println(sonuc);
+     
+     sonuc = --sonuc;     // sonuc = 2
+     System.out.println(sonuc);
+     
+     sonuc = sonuc *= 2;  // sonuc = 4
+     System.out.println(sonuc);
+     
+     sonuc = sonuc /= 2;  // sonuc = 2
+     System.out.println(sonuc);
+     
+     sonuc = sonuc += 8;  // sonuc = 10
+     System.out.println(sonuc);
+     
+     sonuc = sonuc %= 7;  // sonuc = 3
+     System.out.println(sonuc);
+   
+   
+}
+	}
