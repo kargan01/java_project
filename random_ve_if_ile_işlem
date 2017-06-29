@@ -1,0 +1,38 @@
+
+package uygulamalar;
+import java.util.Scanner;
+
+public class tutorial {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int num1,num2;
+		
+		num1 = (int)(Math.random() * 10);
+		num2 = (int)(Math.random() * 10);
+		
+		if(num1 < num2){
+			int degistir = num1;
+			num1 = num2;
+			num2 = degistir;
+		}
+		
+
+		System.out.print(num1 +" + "+ num2 + " ? ");
+		
+		
+		int sonuc = input.nextInt();
+
+		if(num1 + num2 == sonuc)
+		      System.out.println("Tebrikler Doğru Cevap");
+		
+		else{
+		      System.out.println("Malesef Yanlış Cevap");
+		      System.out.print("Doğru Cevap Şu Şekildedir ");
+		      System.out.print(num1 + " + " + num2 + " = " + (num1 + num2));
+		}
+	
+	
+		
+      }
+	}
