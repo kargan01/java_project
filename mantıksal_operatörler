@@ -1,0 +1,23 @@
+package uygulamalar;
+import java.util.Scanner;
+public class tutorial {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Tam sayı girin");
+		
+		int girdi = input.nextInt();
+		
+		if(girdi % 2 == 0 && girdi % 3 == 0)
+			System.out.println(girdi + " 2 ve 3 e tam bölünebilir");
+
+		
+		if(girdi % 2 == 0 || girdi % 3 == 0)
+			System.out.println(girdi + " 2 veya 3 e bölünebilir");
+		
+		if(girdi % 2 == 0 ^ girdi % 3 == 0)
+			System.out.println(girdi + " 2 veya 3 e bölünebilir. Ancak ikisine birden bölünemez");
+      }
+	}
