@@ -1,0 +1,25 @@
+
+package uygulamalar;
+import java.util.Scanner;
+public class tutorial {
+
+	public static void main(String[] args) {
+
+
+Scanner input = new Scanner(System.in);
+
+int yil = input.nextInt();
+
+
+boolean LeapYear = (yil % 4 == 0);
+
+LeapYear = LeapYear && (yil % 100 != 0);
+
+LeapYear = LeapYear || (yil % 400 == 0);
+
+
+		System.out.println(yil + " Sıçrama Yılı Mı ? " + LeapYear);
+		
+		
+      }
+	}
