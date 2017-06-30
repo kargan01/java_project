@@ -1,0 +1,32 @@
+
+package uygulamalar;
+import java.util.Scanner;
+public class tutorial {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Boy Uzunluğunu Girin");	
+		double boy = input.nextDouble();
+    
+		System.out.println("Kilonuzu Girin");	
+		double kilo = input.nextDouble();
+		
+		double boycevrim = Math.pow((boy / 100), 2);
+		double vki = (kilo / boycevrim) ;
+
+		System.out.println("Vücut Kitle Endeksiniz " + vki);
+		
+		if(vki < 18.5)
+				System.out.println("Zayıf");
+		else if(vki < 25) 
+			System.out.println("Normal");
+		else if(vki < 30)
+			System.out.println("Kilolu");
+		else
+			System.out.println("Aşırı Kilolu");
+
+
+      }
+	}
