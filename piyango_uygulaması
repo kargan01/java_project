@@ -1,0 +1,33 @@
+
+package uygulamalar;
+import java.util.Scanner;
+public class tutorial {
+
+	public static void main(String[] args) {
+
+		int lottery = (int)(Math.random() * 10+5);
+		
+		 int ilkrakam = lottery / 10;
+		 int sonrakam = lottery % 10;
+	
+		 
+		 Scanner input = new Scanner(System.in);
+		 System.out.print("Enter your lottery pick (two digits): ");
+		 int tahmin = input.nextInt();
+		 int tahmin_ilk_rakam = tahmin / 10;
+		 int tahmin_son_rakam = tahmin % 10;
+		 System.out.println("Piyango Numarası : " + lottery);
+	if(tahmin == lottery)
+		 System.out.print("Tebrikler Büyük İkramiye Kazandınız : $50.000");
+	else if(tahmin_ilk_rakam == sonrakam && tahmin_son_rakam == ilkrakam)
+		System.out.println("Tebrikler İki Rakamı'da Bildiniz Ödül : $3.000 ");
+		 else if ((tahmin_ilk_rakam == ilkrakam || tahmin_ilk_rakam == sonrakam) ||(tahmin_son_rakam == ilkrakam || tahmin_son_rakam == sonrakam) ){
+	
+			 System.out.print("Tebrikler Rakam Bildniz İkramiye : $1000");
+
+		 }
+			 
+	
+		
+      }
+	}
